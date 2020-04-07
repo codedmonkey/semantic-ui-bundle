@@ -1,5 +1,7 @@
 # Semantic UI Bundle
-The Semantic UI Bundle makes it easy to integrate the [Semantic UI 2][semantic-ui] CSS framework in a [Symfony][symfony] application.
+The Semantic UI Bundle is a basic wrapper for Twig themes used for forms and
+menus to integrate the [Semantic UI 2][semantic-ui] CSS framework in your
+[Symfony][symfony] application.
 
 Requirements:
 - PHP 7.0 or higher
@@ -18,12 +20,17 @@ This bundle is available as a package in Composer:
 composer require codedmonkey/semantic-ui-bundle
 ```
 
+## Documentation
+* [Getting started](documentation/getting-started.markdown)
+* [How to render Semantic UI forms](documentation/forms.markdown)
+* [How to render Semantic UI menus](documentation/knp-menu-bundle.markdown)
+
 ## Resources
 * [GitHub repository](https://github.com/codedmonkey/semantic-ui-bundle)
 * [Packagist package](https://packagist.org/packages/codedmonkey/semantic-ui-bundle)
 
 ## License
-This component is released under the [MIT license](license.markdown).
+This bundle is released under the [MIT license](license.markdown).
 
 [symfony]: https://symfony.com
 [semantic-ui]: https://semantic-ui.com
