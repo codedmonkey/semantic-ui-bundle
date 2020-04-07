@@ -1,0 +1,33 @@
+{
+  "name": "codedmonkey/semantic-ui-bundle",
+  "type": "symfony-bundle",
+  "description": "Integrates Semantic UI 2 into the Symfony framework",
+  "keywords": ["symfony", "semantic-ui"],
+  "homepage": "https://github.com/codedmonkey/semantic-ui-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tim Goudriaan",
+      "homepage": "https://www.codedmonkey.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CodedMonkey\\SemanticUiBundle\\": "source/"
+    }
+  },
+  "require": {
+    "php": ">=7.0",
+    "symfony/http-kernel": "^3.0|^4.0|^5.0",
+    "symfony/twig-bundle": "^3.0|^4.0|^5.0"
+  },
+  "suggest": {
+    "knplabs/knp-menu-bundle": "To render menus with Semantic UI classes",
+    "symfony/form": "To render forms with Semantic UI classes"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    }
+  }
+}
