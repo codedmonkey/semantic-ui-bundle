@@ -73,14 +73,14 @@
 {% endblock %}
 
 {% block dropdownElement %}
-  {% spaceless %}
+  {% apply spaceless %}
     {% import 'knp_menu.html.twig' as knp_menu %}
 
     {% set classes = attributes['class'] is defined ? [attributes['class']] : [] %}
     {% set classes = ['ui']|merge(classes) %}
     {% set classes = classes|merge(['dropdown item']) %}
     {% set attributes = attributes|merge({'class': classes|join(' ')}) %}
-  {% endspaceless %}
+  {% endapply %}
 
   <div{{ knp_menu.attributes(attributes) }}>
     {{ block('label') }}
@@ -105,7 +105,7 @@
 {% endblock %}
 
 {% block linkElement %}
-  {% spaceless %}
+  {% apply spaceless %}
     {% import 'knp_menu.html.twig' as knp_menu %}
 
     {% set classes = attributes['class'] is defined ? [attributes['class']] : [] %}
@@ -113,11 +113,11 @@
     {% set attributes = attributes|merge({'class': classes|join(' ')}) %}
 
     <a href="{{ item.uri }}"{{ knp_menu.attributes(attributes) }}>{{ block('label') }}</a>
-  {% endspaceless %}
+  {% endapply %}
 {% endblock %}
 
 {% block spanElement %}
-  {% spaceless %}
+  {% apply spaceless %}
     {% import 'knp_menu.html.twig' as knp_menu %}
 
     {% set classes = attributes['class'] is defined ? [attributes['class']] : [] %}
@@ -125,17 +125,17 @@
     {% set attributes = attributes|merge({'class': classes|join(' ')}) %}
 
     <div{{ knp_menu.attributes(attributes) }}>{{ block('label') }}</div>
-  {% endspaceless %}
+  {% endapply %}
 {% endblock %}
 
 {% block submenuElement %}
-  {% spaceless %}
+  {% apply spaceless %}
     {% import 'knp_menu.html.twig' as knp_menu %}
 
     {% set classes = attributes['class'] is defined ? [attributes['class']] : [] %}
     {% set classes = classes|merge(['item']) %}
     {% set attributes = attributes|merge({'class': classes|join(' ')}) %}
-  {% endspaceless %}
+  {% endapply %}
 
   <div{{ knp_menu.attributes(attributes) }}>
     {{ block('label') }}
